@@ -1,4 +1,4 @@
-.game-board
+.tictactoeboard
 {
     width: 800px;
     height: 800px;
@@ -14,7 +14,7 @@
 
 }
 
-.box
+.square
 {
 border: 8px solid gray;
 border-radius: 4px;
