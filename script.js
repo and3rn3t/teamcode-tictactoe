@@ -6,7 +6,7 @@ let squares = document.querySelectorAll('.square');
 let nextPlayer = 'red';
 let refresh = document.querySelector('#reset');
 let count = 1;
-document.querySelector('#whosturn').innerHTML = `it's ${nextPlayer}'s turn`;
+document.querySelector('#whosturn').innerHTML = `It's ${nextPlayer}'s turn`;
 function buttonClicked(evt) {
     evt.preventDefault();
     //   console.log("in buttonclicked",count);
@@ -15,7 +15,7 @@ function buttonClicked(evt) {
     //    console.log("color is",evt.srcElement.style.background);
     //if square already picked, alert to choose another square
     if (evt.srcElement.style.background == 'red' || evt.srcElement.style.background == 'blue') {
-        alert('This square already picked, choose another');
+        alert('This square is already played, choose another!');
         return;
     }
     // change square[i] to color of nextPlayer - //squares[].style.background-color = nextPlayer;
@@ -62,7 +62,7 @@ function checkForWinner(winColor, inCount) {
         document.querySelector('#winner').innerHTML = `${winColor} is the winner!`;
     } else {
         if (inCount == 9) {
-            document.querySelector('#winner').innerHTML = 'This game is a draw..., try again?';
+            document.querySelector('#winner').innerHTML = 'This game is a draw... try again?';
         }
     }
 }
