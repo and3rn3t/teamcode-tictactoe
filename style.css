@@ -1,5 +1,6 @@
 .messages {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .tictactoeboard {
@@ -11,7 +12,6 @@
     border-radius: 2px;
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    repeat(3, 1fr);    
 }
 
 .square {
